@@ -1,0 +1,3 @@
+time,api_name,credit,credit_before_api_call,ip,request_line,rescode
+2014-10-29  16:05:59,polarity,701.60,703.65,127.0.0.1,"""GET /api/abc?consumer_key=29e1290f5b2f11e49e8cf0bf97cec1ff&user_id=54462ab8ae335b89381f01a0 HTTP/1.1""",00
+2014-10-29  16:57:11,polarity,689.05,691.10,127.0.0.1,"""GET /api/polarity/abc?consumer_key=29e1290f5b2f11e49e8cf0bf97cec1ff&user_id=54462ab8ae335b89381f01a0 HTTP/1.1""",00

@@ -1,0 +1,13 @@
+{
+    "title":"This is polarity",
+    "name": "polarity",
+    "creator_id": "55a5e3592ba3b2731ad8bd96",
+    "cost_per_request": 2.05,
+    "tag_path": "apis.sentiment.polarity",
+    "url_pattern": ["^/polarity/abc$"],
+    "monthly_free_request": 0,
+    "description": "Very bahal polarity calculator",
+    "version": "1.0",
+    "query_string_helper": "?sentence=Write your sentence here",
+    "is_in_sandbox": false
+}

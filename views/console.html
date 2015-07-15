@@ -1,0 +1,86 @@
+<!-- MetisMenu CSS -->
+<link href="../static/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+<!-- Timeline CSS -->
+<link href="../static/css/plugins/timeline.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="../static/css/sb-admin-2.css" rel="stylesheet">
+<!-- Morris Charts CSS -->
+<link href="../static/css/plugins/morris.css" rel="stylesheet">
+
+<link href="../static/css/console.css" rel="stylesheet">
+
+
+<div id="wrapper" ng-init="action.init()">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: -40px">
+<div class="navbar-header">
+
+    <i class="fa fa-plug fa-2x"> </i>
+            <span>API Repository</span>
+</div>
+<!-- /.navbar-header -->
+
+<ul class="nav navbar-top-links navbar-right">
+
+
+<!-- /.dropdown -->
+<li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="">
+        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-user">
+        <li><a href="" ng-click="action.load_control('profile')"><i class="fa fa-user fa-fw"></i> User Profile</a>
+        </li>
+
+        <li class="divider"></li>
+        <li><a href="" ng-click="action.logout()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+        </li>
+    </ul>
+    <!-- /.dropdown-user -->
+</li>
+<!-- /.dropdown -->
+</ul>
+<!-- /.navbar-top-links -->
+
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            <li>
+                <a ng-class="{active: active_control.name=='overview'}" href="" ng-click="action.load_control('overview','OverviewController')"><i class="fa fa-dashboard"></i> Overview</a>
+            </li>
+
+            <li>
+                <a ng-class="{active: active_control.name=='credential'}" href="" ng-click="action.load_control('credential')"><i class="fa fa-key"></i> Credential</a>
+            </li>
+            <li>
+                <a ng-class="{active: active_control.name=='apis'}" href="" ng-click="action.load_control('apis')"><i class="fa fa-plug"></i> APIs</a>
+            </li>
+            <li>
+                <a ng-class="{active: active_control.name=='statistic'}" href="" ng-click="action.load_control('statistic')"><i class="fa fa-area-chart"></i> Statistic</a>
+            </li>
+            <li>
+                <a ng-class="{active: active_control.name=='credit'}" href="" ng-click="action.load_control('credit')"><i class="fa fa-dollar"></i> &nbsp;Credit</a>
+            </li>
+            <li>
+                <a ng-class="{active: active_control.name=='devlab'}" href="" ng-click="action.load_control('devlab')"><i class="fa fa-codepen"></i> Dev Lab</a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+</div>
+<!-- /.navbar-static-side -->
+</nav>
+
+<div id="page-wrapper" ng-include="active_control.address" ng-cloak>
+
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+
+
+
+
+

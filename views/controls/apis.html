@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="../../static/css/plugins/social-buttons.css">
+
+<div ng-controller="ApiController" ng-init="action.init()">
+
+
+<h1 class="page-header">Manage APIs</h1>
+
+<div class="row">
+
+    <div class="col-sm-2" style="text-align: right">
+        <!--<a class="btn btn-primary" ng-click="action.change_show_mode(true)"><i class="fa fa-birthday-cake"></i> </a>-->
+        <!--<a class="btn btn-danger" ng-click="action.change_show_mode(false)"><i class="fa fa-binoculars"></i> </a>-->
+    </div>
+
+    <div class="col-sm-8  searchbox-container">
+
+        <span class="search-icon"><i class="fa fa-search"></i> </span>
+        <input type="text" class="form-control search-input" placeholder="Search for APIs"
+                ng-model="search">
+    </div>
+</div>
+
+<div class="row result_container">
+<div class="col-lg-3" ng-repeat="api in apis |filter:search " >
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            {{api.title}} ({{api.name}})
+        </div>
+        <div class="panel-body" style="min-height: 145px;max-height: 145px">
+            <p>{{api.description}}</p>
+        </div>
+        <div class="panel-info">
+            <div class="row">
+                <div class="col-sm-1"><i class="fa fa-copyright"></i></div>
+                <div class="col-sm-10">{{api.creator_name}}</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"><i class="fa fa-rocket"></i></div>
+                <div class="col-sm-10">{{api.monthly_free_request}} request per month</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"><i class="fa fa-dollar"></i></div>
+                <div class="col-sm-10">{{api.cost_per_request}} RM per request</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"><i class="fa fa-calendar"></i></div>
+                <div class="col-sm-10">{{api.creation_time}}</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"><i class="fa fa-wrench"></i></div>
+                <div class="col-sm-10"><a target="_blank" href="/help/?api_name={{api.name}}">Readme</a> </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <a class="btn btn-block btn-social" ng-class="action.check(api.id)?'btn-google-plus':'btn-twitter'" ng-click="action.manage_api(api.id,api.name,api.title)">
+                <i class="fa " ng-class="action.check(api.id)?'fa-minus-square':'fa-plus-square'"></i>
+                <span ng-show="! action.check(api.id)">Add API to your console</span>
+                <span ng-show="action.check(api.id)"> Remove API from your console</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+

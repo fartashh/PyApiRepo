@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>PyAPIRepo</title>
+    <link rel="icon" href="../static/img/fav.ico" type="image/x-icon"/>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/lib/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <script src="../static/js/lib/angular/angular.js" type="text/javascript"></script>
+    <script src="../static/js/lib/angular/angular-route.js" type="text/javascript"></script>
+    <script src="../static/js/lib/angular/cookies.js" type="text/javascript"></script>
+    <script src="../static/js/lib/angular/sanitize.js" type="text/javascript"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body ng-app="myApp">
+
+<div class="ng-view">
+
+
+</div>
+
+
+ <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 9999999">
+  <div class="modal-dialog" style="width: 60%">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel" ng-bind="modal.header"></h4>
+      </div>
+      <div class="modal-body" ng-bind-html="modal.body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="../static/js/lib/jquery-1.11.0.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../static/js/lib/bootstrap.min.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../static/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+<script src="../static/js/lib/sb-admin-2.js"></script>
+
+<script type="text/javascript" src="../static/js/lib/jsapi.js"></script>
+
+
+<script src="../static/js/app.js"></script>
+<script src="../static/js/directive/unique.js"></script>
+<script src="../static/js/directive/json-formatter.min.js"></script>
+<script src="../static/js/controller/home.js"></script>
+<script src="../static/js/controller/signup.js"></script>
+<script src="../static/js/controller/console.js"></script>
+<script src="../static/js/controller/c_overview.js"></script>
+<script src="../static/js/controller/c_credential.js"></script>
+<script src="../static/js/controller/c_api.js"></script>
+<script src="../static/js/controller/c_credit.js"></script>
+<script src="../static/js/controller/c_statistic.js"></script>
+<script src="../static/js/controller/c_devlab.js"></script>
+<script src="../static/js/controller/c_profile.js"></script>
+
+
+
+</body>
+</html>

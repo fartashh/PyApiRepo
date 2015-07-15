@@ -1,0 +1,13 @@
+{
+  "title":"place kitten",
+  "name": "kitten",
+  "creator_id": "55a5e3592ba3b2731ad8bd96",
+  "cost_per_request":1.5,
+  "tag_path":"apis.fun.kitten",
+  "url_pattern":["^/kitten/([0-9]+)/([0-9]+)$", "^/kitten"],
+  "monthly_free_request":10,
+  "description":"A quick and simple service for getting pictures of kittens for use as placeholders in your designs or code. Just put your image size (width & height) after our URL and you'll get a placeholder.",
+  "version":"1.0",
+  "query_string_helper":"?num1=val1&num2=val2",
+  "is_in_sandbox":false
+}

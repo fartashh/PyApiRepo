@@ -1,0 +1,13 @@
+{
+    "title":"Wiki pedia search",
+  "name": "wiki",
+  "creator_id": "55a5e3592ba3b2731ad8bd96",
+  "cost_per_request":0.2,
+  "tag_path":"apis.webmining.wiki",
+  "url_pattern":["^/wiki/help$", "^/wiki$"],
+  "monthly_free_request":10,
+  "description":"This API returns the text from Wikipedia based on paragraphs",
+  "version":"1.0",
+  "query_string_helper":"?url=val1&n=val2&s=val",
+  "is_in_sandbox":false
+}

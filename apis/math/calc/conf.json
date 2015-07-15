@@ -1,0 +1,13 @@
+{
+    "title":"calculator",
+  "name": "calcol",
+  "creator_id": "55a5e3592ba3b2731ad8bd96",
+  "cost_per_request":1.5,
+  "tag_path":"apis.math.calc",
+  "url_pattern":["^/calcol/([0-9]+)/([0-9]+)$", "^/calcol$"],
+  "monthly_free_request":10,
+  "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidun dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan.",
+  "version":"1.0",
+  "query_string_helper":"?num1=val1&num2=val2",
+  "is_in_sandbox":false
+}

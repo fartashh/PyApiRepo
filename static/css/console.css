@@ -1,0 +1,166 @@
+#page-wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+
+}
+
+
+.navbar-header {
+    color: #27ae60;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.navbar-header span {
+    font-size: 1.6em;
+    padding-left: 5px;
+}
+
+#side-menu > li:first-child {
+    margin-top: 40px;
+}
+
+.page-header {
+    padding-top: 40px;
+}
+
+.table-header {
+    font-weight: bold;
+}
+
+.table-credentials th {
+    background: #fafafa;
+    color: #777;
+    letter-spacing: .3px;
+    font-size: 12.41px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.table-credentials tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.search-input {
+    padding-left: 35px;
+    font-size: 1.2em;
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 1px;
+    font-size: 1.5em;
+    color: #7f8c8d;
+}
+
+.result_container{
+    margin-top: 20px;
+}
+
+
+.panel-body{
+    padding-bottom: 0px;
+}
+
+.panel-info{
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.panel-info{
+    border-top: 1px solid #ddd;
+    font-size: 1.1em;
+    color: #777777;
+}
+
+.credit-shiled-icon{
+    float: left;
+    padding-right: 20px;
+    color: #2ecc71;
+
+}
+
+.credit-description{
+    text-align: justify;
+}
+
+input.ng-invalid {
+    border: 1px solid #e74c3c;
+}
+
+input.ng-pristine {
+    border: 1px solid #ccc;
+}
+
+/*.form-group{*/
+    /*margin-bottom: 5px;*/
+/*}*/
+
+div .error{
+
+    color: #e74c3c;
+}
+
+#credit_form .help-block{
+    margin-top: -11px;
+}
+
+.pagination{
+    margin-top: 0px;
+    float: right;
+}
+
+.credit-history-tabel{
+    font-size: .9em;
+}
+
+.credit-history-tabel code{
+    font-size: 100%;
+}
+
+.credit-history-tabel .label{
+    font-size: 100%;
+}
+
+.r{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.available-credit{
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+#api-lab .row{
+    margin-bottom: 5px;
+}
+
+#api-lab .form-label{
+    width: 110px;
+}
+
+#api-lab .input-group-addon{
+    width: 1px;
+
+}
+
+#api-lab .result-container{
+
+    height: 500px;
+    overflow: auto;
+    white-space: pre;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin-left: 15px;
+    border-radius: 5px;
+
+}

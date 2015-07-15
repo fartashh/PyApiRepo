@@ -1,0 +1,13 @@
+{
+  "title":"Custom Search",
+  "name": "search",
+  "creator_id": "55a5e3592ba3b2731ad8bd96",
+  "cost_per_request":1.5,
+  "tag_path":"apis.webmining.search",
+  "url_pattern":["^/search/([0-9]+)/([0-9]+)$", "^/search"],
+  "monthly_free_request":10,
+  "description":"This page contains information about getting started with the CustomSearch API using the Google APIs Client Library for Python. In addition, you may be interested in the following documentation:",
+  "version":"1.0",
+  "query_string_helper":"?num1=val1&num2=val2",
+  "is_in_sandbox":false
+}

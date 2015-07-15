@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="../../static/css/lib/json-formatter.min.css">
+
+<div ng-controller="DevlabController" ng-init="action.init()" id="api-lab">
+    <h1 class="page-header">API Lab</h1>
+
+    <div class="row">
+        <div class="col-sm-12 form-inline">
+            <label class="form-label">Consumer Key:: </label>
+            <input class="form-control" type="text" ng-model="user.consumer_key"
+                   style="width: 70%" ng-disabled="true">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 form-inline">
+            <label class="form-label">Application:: </label>
+            <select ng-model="request.api" class="form-control" style="width: 40%"
+                    ng-options="item[1] as item[3]+' ('+(item[1])+')' for item in user.apis">
+<option value=''>- Please Select the API -</option>
+
+            </select>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-12 form-inline">
+            <select ng-model="request.method" ng-init="options[0].value"  class="form-control form-label"
+                    ng-options="item[0] as item[1] for item in methods">
+            </select>
+
+            <div class="form-group input-group" style="width: 70%">
+                <span class="input-group-addon">/api/{{request.api}} </span>
+                <input class="form-control" type="text" placeholder="?param1=val1&param2=val2" ng-model="request.data">
+
+            </div>
+            <!--ng-disabled="request.api===undefined"-->
+            <button class="btn btn-primary" ng-click="action.submit()" >Submit </button>
+
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <pre class="col-sm-10 result-container"><json-formatter json="response" open="2" ></json-formatter></pre>
+        <!--<pre class="col-sm-10 result-container">{{response | json}}</pre>-->
+    </div>
+</div>

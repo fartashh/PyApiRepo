@@ -1,0 +1,138 @@
+<div ng-controller="OverviewController" ng-init="action.init()">
+
+    <h1 class="page-header">Overview</h1>
+
+
+    <div class="row">
+
+        <div class="col-sm-9">
+
+            <i class="fa fa-cloud fa-5x credit-shiled-icon"></i>
+
+            <p class="credit-description"> Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                consequat
+                massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                rhoncus
+                ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                Cras
+                dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor
+                eu,
+                consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi
+                vel
+                augue. Curabiturbus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+                porttitor eu,
+                consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi
+                vel
+                augue. Curabitur </p>
+
+        </div>
+
+        <div class="col-sm-3">
+            <div class="panel panel-red">
+                <div class="panel-heading">User info</div>
+                <div class="panel-body">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-sm-1"><i class="fa fa-user"></i></div>
+                            <div class="col-sm-10">{{user.firstName+ ' '+user.lastName}}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1"><i class="fa fa-at"></i></div>
+                            <div class="col-sm-10">{{user.email}}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1"><i class="fa fa-dollar"></i></div>
+                            <div class="col-sm-10">RM <span ng-show="user.hasOwnProperty('credit')">{{user.credit.amount | number:2}}</span>
+                                                      <span ng-show="! user.hasOwnProperty('credit')">0.00</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div id="chartdiv"></div>
+
+        </div>
+    </div>
+
+    <h1 class="page-header">How to use</h1>
+
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge"><i class="fa fa-key"></i>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Create Credentials</h4>
+
+                            <p>
+                                <small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor
+                                perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi.
+                                Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge warning"><i class="fa fa-plus-square"></i>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Search and Add API to your console </h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam,
+                                tenetur
+                                commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio,
+                                tempore. Animi officiis alias, officia repellendus.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est
+                                tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius
+                                voluptates,
+                                ad aut recusandae minus eaque facere.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">Start Calling API</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis
+                                enim
+                                eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem
+                                totam
+                                quaerat, magni commodi quisquam.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+
